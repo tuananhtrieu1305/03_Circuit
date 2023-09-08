@@ -1,0 +1,88 @@
+@use "../abstracts";
+.header {
+  padding-top: 18px;
+  background: abstracts.$bg-color;
+  position: sticky;
+  top: -18px;
+  z-index: 2;
+  &-container {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 0 6px;
+    span {
+      color: abstracts.$primary-color;
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+    gap: 0 193px;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+  &-link {
+    padding: 6px 21px;
+    display: block;
+    color: abstracts.$primary-color;
+    font-weight: 400;
+    transition: all 0.2s linear;
+    position: relative;
+    &::before {
+      content: attr(title);
+      display: block;
+      font-weight: 600;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    &::after {
+      content: "";
+      height: 3px;
+      width: calc(100% - 42px);
+      position: absolute;
+      bottom: 0;
+      left: 21px;
+      background: abstracts.$primary-color;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s linear;
+    }
+    &:hover {
+      font-weight: 600;
+      &::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+    &.active {
+      font-weight: 600;
+    }
+  }
+  &-auth {
+    display: flex;
+    align-items: center;
+    gap: 0 28px;
+  }
+  .log-in-btn {
+    color: abstracts.$primary-color;
+    font-weight: 600;
+  }
+  .sign-up-btn {
+    --height: 50px;
+    border-radius: 6px;
+    background: abstracts.$primary-color;
+    color: #fff;
+    font-size: 1.6rem;
+    min-width: 104px;
+  }
+}

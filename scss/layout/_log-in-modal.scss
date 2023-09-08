@@ -1,0 +1,122 @@
+@use "../abstracts";
+.log-in {
+  background: linear-gradient(to right, #04704e 50%, abstracts.$bg-color 50%);
+  min-height: 100vh;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-heading {
+    margin-top: 345px;
+    color: #fff;
+    max-width: 470px;
+    padding: 20px 0;
+    position: relative;
+    &::before {
+      content: "";
+      width: 36.1%;
+      height: 4px;
+      border-radius: 12px;
+      background: abstracts.$light-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &-desc {
+    color: #fff;
+    max-width: 411px;
+  }
+  &-modal {
+    margin-top: 126px;
+    padding: 38px 28px;
+    border-radius: 12px;
+    background: #fff;
+    width: 470px;
+    position: relative;
+  }
+  &-close-icon {
+    img {
+      position: absolute;
+      cursor: pointer;
+      top: -56px;
+      right: 0;
+    }
+  }
+  &-label {
+    color: abstracts.$primary-color;
+    font-weight: 600;
+    margin-bottom: 17px;
+    display: block;
+  }
+  &-input {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #d4dddd;
+    padding: 17px;
+    color: abstracts.$text-color;
+    font-weight: 400;
+  }
+  .password-log-in {
+    margin-top: 26px;
+    position: relative;
+    span {
+      color: abstracts.$primary-color;
+      font-weight: 600;
+      position: absolute;
+      right: 17px;
+      top: 58%;
+      cursor: pointer;
+    }
+  }
+  button {
+    margin-top: 60px;
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+  .separate {
+    margin-top: 32px;
+    background: #d4dddd;
+    height: 1px;
+    width: 100%;
+  }
+  .other-choice {
+    padding: 0 23px;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+  }
+  .other-log-in {
+    @include abstracts.flexCenter;
+    flex-direction: column;
+    gap: 18px 0;
+    button {
+      --height: 50px;
+      border: 1px solid #d4dddd;
+      margin-top: 0;
+      background: transparent;
+      width: 255px;
+      @include abstracts.flexCenter;
+      transition: all 0.2s linear;
+      gap: 0 13px;
+      span {
+        font-size: 1.6rem;
+      }
+      &:hover {
+        background: abstracts.$light-color;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      strong {
+        font-weight: 700;
+        color: abstracts.$primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
