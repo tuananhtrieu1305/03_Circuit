@@ -1,0 +1,52 @@
+@use "../../abstracts";
+.feature {
+  &-container {
+    padding: 100px 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-media {
+    flex-shrink: 0;
+    width: 470px;
+    height: 430px;
+    position: relative;
+  }
+  &-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  &-decor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  &-content {
+    max-width: 570px;
+  }
+  &-desc {
+    margin-top: 18px;
+  }
+  &-list {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 0 11px;
+    transition: all 0.2s linear;
+    span {
+      color: abstracts.$primary-color;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 166.667%;
+    }
+  }
+}

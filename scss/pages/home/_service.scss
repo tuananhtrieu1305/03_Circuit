@@ -1,0 +1,39 @@
+@use "../../abstracts";
+.service {
+  &-container {
+    padding: 80px 0 160px;
+  }
+  &-heading {
+    max-width: 570px;
+  }
+  &-list {
+    margin-top: 70px;
+    @include abstracts.grid(3, 30px);
+  }
+  &-item {
+    border-radius: 12px;
+    border: 1px solid #d8e0e0;
+    background: #fff;
+    padding: 44px 22px;
+    cursor: pointer;
+    height: 338px;
+    transition: all 0.2s linear;
+    strong {
+      margin-top: 28px;
+      color: abstracts.$primary-color;
+      font-size: 2.2rem;
+      font-weight: 700;
+      display: inline-block;
+    }
+    span {
+      margin-top: 16px;
+      display: inline-block;
+      font-size: 1.7rem;
+    }
+    &:hover {
+      box-shadow: 0px 18px 46px 0px rgba(3, 46, 50, 0.08);
+      transform: translateY(-10px);
+      border: 1px solid transparent;
+    }
+  }
+}

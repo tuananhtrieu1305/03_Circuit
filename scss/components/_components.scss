@@ -9,6 +9,8 @@
   color: abstracts.$primary-color;
   font-size: 1.8rem;
   font-weight: 600;
+  outline: none;
+  border: none;
   transition: all 0.2s linear;
   &:hover {
     opacity: 0.85;

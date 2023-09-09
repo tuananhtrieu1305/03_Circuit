@@ -1,0 +1,82 @@
+@use "../abstracts";
+.article {
+  background: abstracts.$bg-color;
+  &-container {
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-content {
+    max-width: 570px;
+    p {
+      margin-top: 20px;
+    }
+    strong {
+      margin-top: 20px;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 145.455%;
+      display: inline-block;
+    }
+  }
+  .hero-article-rate {
+    margin-top: 20px;
+  }
+  .strong-2 {
+    margin-top: 28px;
+  }
+  &-list {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    span {
+      color: abstracts.$primary-color;
+    }
+  }
+  &-cta {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    button {
+      --height: 60px;
+    }
+  }
+  .buy-btn {
+    min-width: 147px;
+  }
+  .add-btn {
+    min-width: 170px;
+    color: #fff;
+    background: abstracts.$primary-color;
+  }
+  .img-media {
+    width: 470px;
+    height: 470px;
+    img {
+      position: relative;
+      z-index: 1;
+      border-radius: 12px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .img-decor {
+    z-index: 0;
+    position: absolute;
+    top: 43%;
+    left: 54%;
+  }
+  &-close {
+    margin-top: -107px;
+    float: right;
+  }
+}

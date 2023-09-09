@@ -1,0 +1,23 @@
+@use "../../abstracts";
+.course {
+  background: abstracts.$bg-color;
+  &-container {
+    padding: 100px 0;
+  }
+  &-heading {
+    text-align: center;
+  }
+  &-desc {
+    @extend .course-heading;
+    margin: 18px auto 0 auto;
+    max-width: 570px;
+  }
+  &-list {
+    margin-top: 70px;
+    @include abstracts.grid(3, 30px);
+  }
+  &-btn {
+    width: 156px;
+    margin: 55px auto 0 auto;
+  }
+}

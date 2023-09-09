@@ -1,0 +1,45 @@
+@use "../../abstracts";
+.cta {
+  background: #04704e;
+  &-container {
+    padding: 100px 0;
+    position: relative;
+  }
+  &-content {
+    padding: 0 285px;
+    p {
+      margin-top: 18px;
+      @extend .cta-heading;
+    }
+    button {
+      margin: 38px auto 0 auto;
+      min-width: 173px;
+    }
+  }
+  &-heading {
+    margin-top: 38px;
+    color: #fff;
+    text-align: center;
+  }
+  &-decor {
+    position: absolute;
+    &-1 {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    &-2 {
+      @extend .cta-decor-1;
+      left: initial;
+      right: 0;
+    }
+    &-3 {
+      top: 96px;
+      right: 141px;
+    }
+    &-4 {
+      bottom: 96px;
+      left: 141px;
+    }
+  }
+}
