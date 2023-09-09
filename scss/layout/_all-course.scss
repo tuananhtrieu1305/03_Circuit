@@ -1,0 +1,56 @@
+@use "../abstracts";
+.all-course {
+  background: abstracts.$bg-color;
+  &-container {
+    padding: 72px 0 100px;
+  }
+  &-content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-nav {
+    width: 370px;
+    h2 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 131.25%;
+    }
+  }
+  &-filter-list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px 0;
+  }
+  &-filter-item {
+    padding-bottom: 28px;
+    position: relative;
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 150%;
+      margin-bottom: 18px;
+    }
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      border-radius: 1px;
+      background: #bfcec6;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px 0;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}

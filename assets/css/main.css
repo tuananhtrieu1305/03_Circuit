@@ -634,6 +634,62 @@ a {
   float: right;
 }
 
+.all-course {
+  background: #e0eae5;
+}
+.all-course-container {
+  padding: 72px 0 100px;
+}
+.all-course-content {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.all-course-nav {
+  width: 370px;
+}
+.all-course-nav h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 131.25%;
+}
+.all-course-filter-list {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px 0;
+}
+.all-course-filter-item {
+  padding-bottom: 28px;
+  position: relative;
+}
+.all-course-filter-item h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 18px;
+}
+.all-course-filter-item::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+  background: #bfcec6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.all-course-filter-item .list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+.all-course-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
 .hero {
   padding-top: 18px;
   background: #e0eae5;
