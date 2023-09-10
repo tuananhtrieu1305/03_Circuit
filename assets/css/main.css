@@ -1181,4 +1181,24 @@ a {
   left: 141px;
 }
 
+.about-hero {
+  background: #e0eae5;
+}
+.about-hero-container {
+  padding: 72px 0 100px;
+}
+.about-hero-media {
+  width: 470px;
+  height: 470px;
+}
+.about-hero-content {
+  max-width: 570px;
+}
+.about-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 /*# sourceMappingURL=main.css.map */
