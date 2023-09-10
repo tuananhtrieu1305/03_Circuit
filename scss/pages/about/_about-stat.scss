@@ -1,0 +1,33 @@
+@use "../../abstracts";
+.about-stat {
+  &-container {
+    border-radius: 12px;
+    background: abstracts.$primary-color;
+    padding: 100px 0;
+    @include abstracts.flexCenter;
+    flex-direction: column;
+  }
+  &-heading {
+    color: #fff;
+  }
+  &-desc {
+    margin-top: 20px;
+    max-width: 570px;
+    color: #c5d8d9;
+    text-align: center;
+  }
+  &-list {
+    margin-top: 70px;
+    @include abstracts.flexCenter;
+    gap: 0 70px;
+    strong {
+      color: #fff;
+      font-size: 4.2rem;
+      line-height: 123.81%;
+    }
+  }
+  &-item {
+    @include abstracts.flexCenter;
+    flex-direction: column;
+  }
+}

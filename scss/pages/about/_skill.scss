@@ -1,0 +1,29 @@
+@use "../../abstracts";
+.skill {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 0 80px;
+    align-items: center;
+  }
+  &-media {
+    max-width: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 30px;
+    img {
+      width: 220px;
+      height: 220px;
+      border-radius: 12px;
+      &:nth-child(even) {
+        margin-top: 32px;
+      }
+    }
+  }
+  &-content {
+    max-width: 570px;
+  }
+  &-desc {
+    margin-top: 20px;
+  }
+}

@@ -3,18 +3,47 @@
   background: abstracts.$bg-color;
   &-container {
     padding: 72px 0 100px;
+    display: flex;
   }
   &-media {
     width: 470px;
     height: 470px;
+    margin-left: 80px;
+    position: relative;
   }
   &-content {
     max-width: 570px;
+    &-heading {
+      font-size: 7rem;
+      line-height: 114.286%;
+    }
+    &-desc {
+      margin-top: 20px;
+      color: abstracts.$primary-color;
+    }
+    a {
+      margin-top: 40px;
+      display: inline-block;
+      text-decoration: underline;
+      color: #ff5f1a;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 166.667%;
+    }
   }
   &-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+    position: relative;
+    z-index: 1;
+  }
+  &-decor {
+    width: 570px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

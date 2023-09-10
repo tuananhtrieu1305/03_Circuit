@@ -1,0 +1,28 @@
+@use "../../abstracts";
+.resource-sub-hero {
+  background: #ffcd00;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    img {
+      width: 18px;
+      cursor: pointer;
+      height: 18px;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    gap: 0 38px;
+  }
+  &-item {
+    color: abstracts.$primary-color;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    &:hover {
+      color: #ff5f1a;
+    }
+  }
+}
