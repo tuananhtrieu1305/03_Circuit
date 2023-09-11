@@ -1370,4 +1370,120 @@ a {
   color: #ff5f1a;
 }
 
+.resource-feature-container {
+  padding: 160px 0;
+}
+.resource-feature-heading {
+  max-width: 570px;
+  margin: 0 auto;
+  text-align: center;
+}
+.resource-feature-list {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 0;
+}
+.resource-feature-item {
+  border-radius: 12px;
+  width: 370px;
+  border: 1px solid #d8e0e0;
+  padding: 24px;
+  height: 582px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.resource-feature-item:hover {
+  transform: translateY(-10px);
+}
+.resource-feature-item-img {
+  width: 322px;
+  height: 262px;
+  margin-bottom: 24px;
+}
+.resource-feature-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.resource-feature-item-1 {
+  border-radius: 12px;
+  border: 1px solid #d8e0e0;
+  padding: 24px;
+  background: #fff;
+  width: 770px;
+  position: relative;
+  transition: all 0.2s linear;
+}
+.resource-feature-item-1:hover {
+  transform: translateY(-10px);
+}
+.resource-feature-item-1 figure {
+  width: 722px;
+  cursor: pointer;
+  height: 534px;
+}
+.resource-feature-item-1 figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.resource-feature-item-1 .resource-feature-item-heading {
+  color: #fff;
+}
+.resource-feature-item-1 .resource-feature-item-tag {
+  color: #fff;
+}
+.resource-feature-item-1 .resource-feature-item-desc {
+  color: #fff;
+}
+.resource-feature-item-1 .resource-feature-item-link {
+  color: #fff;
+}
+.resource-feature-item-content {
+  position: absolute;
+  left: 48px;
+  bottom: 48px;
+}
+.resource-feature-item-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 150%;
+  max-width: 322px;
+}
+.resource-feature-item-tag {
+  margin-top: 12px;
+  color: #91a1a1;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 171.429%;
+}
+.resource-feature-item-desc {
+  margin-top: 16px;
+  max-width: 322px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%;
+}
+.resource-feature-item-link {
+  margin-top: 22px;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 166.667%;
+  color: #ff5f1a;
+  text-decoration: underline;
+}
+.resource-feature-btn {
+  margin: 55px auto 0 auto;
+  --height: 60px;
+  min-width: 200px;
+}
+
 /*# sourceMappingURL=main.css.map */
